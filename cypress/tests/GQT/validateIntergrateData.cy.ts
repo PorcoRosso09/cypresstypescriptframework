@@ -37,7 +37,7 @@ function checkIntegrationPackageData(
     cy.get('[pc89=""] > .p-datatable-column-header-content > .p-datatable-filter > .p-button')
       .click({ force: true });
 
-    cy.get('input[placeholder="SV Dest ID"]').type(codeInput);
+    cy.get('input[placeholder="SV Dest ID"]').type(codeInput, {force:true});
     cy.get('button[aria-label="Apply"]').click({ force: true });
     cy.wait(2000);
 
